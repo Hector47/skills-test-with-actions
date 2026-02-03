@@ -73,8 +73,8 @@ def test_get_nth_fibonacci_ten():
 
     # Assert
     assert result == 55
-    def test_get_nth_fibonacci_negative():
-        """Test with negative n (should raise ValueError)."""
-        n = -5
-        with pytest.raises(ValueError, match="n cannot be negative"):
-            get_nth_fibonacci(n)
+def test_get_nth_fibonacci_negative():
+    """Test with negative n (should raise ValueError)."""
+    n = -5
+    with pytest.raises(ValueError, match="n cannot be negative"):
+        get_nth_fibonacci(n)
